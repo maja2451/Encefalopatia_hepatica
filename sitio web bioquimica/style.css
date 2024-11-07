@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+
+}
+
+.navbar {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    margin-right: 10px;
+
+}
+
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: olive;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+
+}
+
+.navbar a {
+    display: block;
+    padding: 25px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.header {
+    height: 100vh !important;
+    background: url(img/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 120px;
+    color: #fff;
+    
+    
+}
+
+
+
+h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 25px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 0 100px;
+    color: #fff;
+
+    
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 150vh; /* aqui es donde cambio es el espacio de las secciones para se mas grandes o pequeñas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sau{
+    padding: 30px;
+    background: #1f1d1d;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3 5rem rgba(0, 0, 0, 5);
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {
+    font-size: 16px;
+    padding: 0 15px;
+
+}
+
+.¿quees {
+    height: 130vh !important;
+    background:  #14b76e;
+    background-size: cover; 
+    
+
+    
+    
+}
+
+.¿quees p {
+    font-size: 25px;
+}
+
+.causas {
+    background: #808080;
+    margin: 20px;
+    
+}
+
+.causas p {
+    font-size: 50px;
+}
+
+.sintomas {
+    background: #14b76e;
+    
+}
+
+.sintomas p {
+    font-size: 50px;
+
+}
+
+.cicloafectado {
+    background: #808080;
+    height: 175vh !important;
+    margin: 20px;
+}
+
+.cicloafectado p {
+    font-size: 30px;
+}
+
+.moleculas {
+    background: #14b76e;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+     
+}
+
+.moleculas-box {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.moleculas-box img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.moleculas p{
+    font-size: 25px;
+}
+
+.tratamientos {
+    background: #808080;
+    margin: 20px;
+}
+
+.tratamientos p{
+    font-size: 30px;
+}
+
+.referencias {
+    background: #14b76e;
+    font: 0px;
+}
+
+@media (max-width: 768px){
+   .title{
+    margin-bottom: 0;
+    font-size: 40px;
+
+   }
+
+   .sau{
+    height: 120vh;
+   }
+
+   .navbar{
+    display: none;
+   }
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
